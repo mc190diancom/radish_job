@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个人简历</title>
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="nav">
+		<div class="nav_main">
+			<div class="back">
+				<i class="fa fa-angle-left"></i>
+			</div>
+			<div class="title">面试与通知</div>
+		</div>
+	</div>
+	<div class="fixed_margin"></div>
+
+	<!-- title -->
+	<div class="interview_panel">
+		<a href="msg_interview.html" class="syn_itv">
+			<div class="outline">
+				<img src="img/icon-interview-syn.png" alt="" />
+				<h3>同步面试</h3>
+				<p>有<span id="viNum"></span>条面试邀请</p>
+			</div>
+		</a>
+		<a href="msg_asyn_interview.html" class="asy_itv">
+			<div class="outline">
+				<img src="img/icon-interview-asy.png" alt="" />
+				<h3>异步面试</h3>
+				<p>当前没有面试邀请</p>
+			</div>
+		</a>
+	</div>
+	<!-- title end -->
+	<!-- body -->
+	<div class="card_list">
+		<a href="msg_details.html" class="card_msg">
+			<p><i class="fa fa-bell fa-fw"></i>通知</p>
+			<p class="more"><span id="sysNum">0</span></p>
+		</a>
+		<a href="msg_details.html" class="card_msg">
+			<p><i class="fa fa-commenting fa-fw"></i>聊天</p>
+			<p class="more"><span>0</span></p>
+		</a>
+	</div>
+
+	<!-- body end -->
+	
+	<div class="fixed_margin"></div>
+    <div class="tab_bar">
+    	<ul class="tab_bar_nav clearfix">
+    		<li><a href="index.html"><span class="icon-home"></span></a></li>
+    		<li><a href="msg.html"><span class="icon-msg_selected"></span></a></li>
+    		<li><a href="resume.html"><span class="icon-resume"></span></a></li>
+    		<li><a href="setting.html"><span class="icon-user"></span></a></li>
+    	</ul>
+    </div>
+	<script type="text/javascript" src="js/vendors/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/vendors/layer.js"></script>
+	<script type="text/javascript" src="js/msg.js"></script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个人简历</title>
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="nav">
+		<div class="nav_main">
+			<div class="back">
+				<i class="fa fa-angle-left"></i>
+			</div>
+			<div class="title">异步面试管理</div>
+		</div>
+	</div>
+	<div class="fixed_margin"></div>
+
+	<!-- title -->
+	<div class="tab_status_o">
+		<div class="tab_status">
+			<div class="item active">面试邀请</div>
+			<div class="item">待面试</div>
+			<div class="item">已结束</div>
+			<div class="item">已拒绝</div>
+		</div>
+	</div>
+	<div class="fixed_margin_2"></div>
+	<!-- title end -->
+	<!-- body -->
+	<div class="drop_content">
+		<div class="interview_now" value="3">
+			<div class="title">
+				<div>准备面试</div>
+				<div>
+					2017/08/07-17:00
+				</div>
+			</div>
+		</div>
+		
+		<div class="m_list">
+			<div class="msg_panel_i">
+				<div class="title">
+					<p>面试邀请 -  <span>2017/08/07-17:00</span></p>
+				</div>
+				<div class="body">
+					<div class="l_part">
+						<h3>猎维科技有限公司</h3>
+						<p>Java开发工程师</p>
+						
+					</div>
+					<div class="r_part">
+						<div class="item c1">查看</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="msg_panel_i">
+				<div class="title">
+					<p>等待面试 -  2017/08/07-17:00</p>
+				</div>
+				<div class="body">
+					<div class="l_part">
+						<h3>猎维科技有限公司</h3>
+						<p>Java开发工程师</p>
+						
+					</div>
+					<div class="r_part">
+						<div class="item c3">开始面试</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="msg_panel_i">
+				<div class="body">
+				<div class="l_part">
+					<h3>面试已结束</h3>
+					<p>Java开发工程师</p>
+				</div>
+				<div class="r_part">
+					<div class="item fbd">已结束</div>
+				</div>
+				</div>
+			</div>
+			
+			<div class="msg_panel_i">
+				<div class="body">
+				<div class="l_part">
+					<h3>面试已结束</h3>
+					<p>Java开发工程师</p>
+				</div>
+				<div class="r_part">
+					<div class="item c2 fbd">已拒绝</div>
+				</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="fixed_margin"></div>
+    <div class="tab_bar">
+    	<ul class="tab_bar_nav clearfix">
+    		<li><a href="index.html"><span class="icon-home"></span></a></li>
+    		<li><a href="msg.html"><span class="icon-msg_selected"></span></a></li>
+    		<li><a href="resume.html"><span class="icon-resume"></span></a></li>
+    		<li><a href="setting.html"><span class="icon-user"></span></a></li>
+    	</ul>
+    </div>
+    <script type="text/javascript" src="js/vendors/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/vendors/layer.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".c3").on("click",function(){
+				layer.open({
+	                content:"{:U('Interview/score','',FALSE)}",
+	                area: ['40%', '80%'],
+	                time: 1 //2秒后自动关闭
+	            });
+			});
+		});
+	</script>
+</body>
+</html>

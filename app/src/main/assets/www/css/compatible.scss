@@ -1,0 +1,35 @@
+@mixin _flex{
+	display: -webkit-box; 
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin _flex-items($fl:1){
+	 -webkit-box-flex: $fl; 
+	 -moz-box-flex: $fl; 
+	 -webkit-flex: $fl; 
+	 -ms-flex: $fl; 
+	 flex: $fl;
+}
+
+@mixin _clearfix{
+	.clearfix{
+		overflow:auto;
+	}
+}
+
+@mixin _border-radius($i:4px){
+	-webkit-border-radius:$i;
+	-moz-border-radius:$i;
+	-o-border-radius:$i;
+	border-radius:$i;
+}
+
+@mixin _box-shadow($list:0px 1px 1px rgba(0,0,0,.05)){
+	-webkit-box-shadow:$list;
+	-moz-box-shadow:$list;
+	-o-box-shadow:$list;
+	box-shadow:$list;
+}

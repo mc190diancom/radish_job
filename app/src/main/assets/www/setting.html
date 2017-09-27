@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>个人简历</title>
+<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="nav">
+		<div class="nav_main">
+			<div class="back">
+				<i class="fa fa-angle-left"></i>
+			</div>
+			<div class="title">用户中心</div>
+		</div>
+	</div>
+	<div class="fixed_margin"></div>
+
+	<!-- title -->
+	<div class="m_list">
+		<div class="user_panel user_panel_o">
+			<div class="main_body clearfix">
+				<div class="profile">
+					<div class="img_outline">
+						<img id="header_img" src="img/user_logo/default.jpg" onerror="javascript:this.src='img/user_logo/default.jpg'" />
+					</div>
+				</div>
+				<div class="m_body">
+					<h3>默认名字<!--  - <span class="small">求职中</span> --></h3>
+				</div>
+			</div>
+			<!-- main_body end -->
+		</div>
+		<!-- user_panel end -->
+	</div>
+	<div class="fav_bar">
+		<div class="count_con">沟通数<span>0</span></div>
+		<div class="count_fav" onclick="window.location.href='setting_collection.html'">收藏数<span id="cnum">0</span></div>
+	</div>
+	<!-- title end -->
+	<!-- body -->
+	<div class="card_list">
+		<a href="resume.html" class="card">
+			<p><i class="fa fa-file-text fa-fw"></i>个人简历</p>
+			<p class="more"></p>
+		</a>
+		<a href="setting_process.html" class="card">
+			<p><i class="fa fa-hourglass-2 fa-fw"></i>简历状态</p>
+			<p class="more"></p>
+		</a>
+		<a href="msg.html" class="card">
+			<p><i class="fa fa-bell fa-fw"></i>通知与面试</p>
+			<p class="more"></p>
+		</a>
+	</div>
+	
+	<div class="card_list">
+		<a href="setting_basic.html" class="card">
+			<p><i class="fa fa-cog fa-fw"></i>基础设置</p>
+			<p class="more"></p>
+		</a>
+		<a href="setting_modify_password.html" class="card">
+			<p><i class="fa fa-lock fa-fw"></i>修改密码</p>
+			<p class="more"></p>
+		</a>
+	</div>
+	
+	<div class="exit btn btn_fire">
+		退出登录
+	</div>
+	
+	<!-- body end -->
+	
+	<div class="fixed_margin"></div>
+    <div class="tab_bar">
+    	<ul class="tab_bar_nav clearfix">
+    		<li><a href="index.html"><span class="icon-home"></span></a></li>
+    		<li><a href="msg.html"><span class="icon-msg"></span></a></li>
+    		<li><a href="resume.html"><span class="icon-resume"></span></a></li>
+    		<li><a href="setting.html"><span class="icon-user_selected"></span></a></li>
+    	</ul>
+    </div>
+	<script type="text/javascript" src="js/vendors/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="js/vendors/layer.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/setting.js"></script>
+</body>
+</html>
